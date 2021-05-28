@@ -3,7 +3,7 @@
 Phân loại vị kem theo ảnh.
 
 * Đối với những nơi phân phối kem với giá sỉ, kem được đóng hộp lớn và đề nhãn, hương vị rõ ràng. 
-Nhưng khi các nhà phân phối kem nhỏ lẻ nhập kem ký giá sỉ về, để tăng lợi nhuận và thuận tiện cho việc bán lẻ, 
+Nhưng khi các nhà phân phối kem nhỏ lẻ nhập kem giá sỉ về, để tăng lợi nhuận và thuận tiện cho việc bán lẻ, 
 họ thường chia kem trong hộp lớn vào từng hộp nhỏ hơn rồi đem bán ra thị trường. 
 Điều này dẫn đến việc đề nhãn cho kem thường không được rõ ràng và hương vị của kem khó có thể nhận biết 
 * **Input**: Ảnh kem bất kỳ 
