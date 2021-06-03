@@ -1,31 +1,18 @@
 # MÔ TẢ ĐỒ ÁN
+# PHÁT HIỆN CÁC LOẠI PHƯƠNG TIỆN ĐANG THAM GIA GIAO THÔNG
 ## 1. Mô tả bài toán
-Phân loại vị kem theo ảnh.
+Phát hiện phương tiện đang tham gia giao thông
 
-* Đối với những nơi phân phối kem với giá sỉ, kem được đóng hộp lớn và đề nhãn, hương vị rõ ràng. 
-Nhưng khi các nhà phân phối kem nhỏ lẻ nhập kem giá sỉ về, để tăng lợi nhuận và thuận tiện cho việc bán lẻ, 
-họ thường chia kem trong hộp lớn vào từng hộp nhỏ hơn rồi đem bán ra thị trường. 
-Điều này dẫn đến việc đề nhãn cho kem thường không được rõ ràng và hương vị của kem khó có thể nhận biết 
-* **Input**: Ảnh kem bất kỳ 
-* **Output**: Vị kem của ảnh
+* Bằng cách sử dụng hình ảnh từ camera lắp đặt trên cao ở các góc đường thuộc một khu vực cụ thể trong TPHCM, đồphát hiện và phân loại các phương tiện đang tham gia giao thông.
+từ đó kiểm soát được mật độ người tham gia giao thông theo thời gian thực tại khu vực này, hỗ trợ việc kiểm soát các luồng giao thông để hạn chế tình trạng kẹt xe.
+* **Input**: Ảnh chụp từ camera được đặt tại các vị trí cao trên những con đường thuộc một khu vực xác định
+* **Output**: Phát hiện loại phương tiện có trong ảnh
 
 ## 2.Mô tả về bộ dữ liệu
 Cách thức xây dựng bộ dữ liệu:
-* Raw dữ liệu trên mạng (Google, Insta)
-Số lượng, độ da dạng:
-* Gồm 8 lớp:
-* Dừa: 668
-* Bạc hà: 609
-* Dâu: 711
-* Chuối: 447
-* Sầu riêng: 497
-* Socola: 748
-* Vanilla: 793
-* Khoai môn: 709
-Phân chia (split) - train/dev/test
-* Train 80%
-* Val 20%
-* Test chưa tính
+* Sử dụng hình ảnh thời gian thực lấy từ camera của sở giao thông vận tải TPHCM, ước tính với mỗi camera cứ 12s sẽ chụp ra một ảnh
+![anh_minh_hoa](https://user-images.githubusercontent.com/80096230/120655439-e1676200-c4ac-11eb-905b-67d5562120e4.png)
+
 
 ## 3.Mô tả về đặc trưng
-Sử dụng CNN để tự động rút trích đặc trưng
+Sử dụng thuật toán yolov4
