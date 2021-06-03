@@ -12,7 +12,7 @@ từ đó kiểm soát được mật độ người tham gia giao thông theo t
 Cách thức xây dựng bộ dữ liệu:
 * Sử dụng hình ảnh thời gian thực lấy từ camera của sở giao thông vận tải TPHCM, ước tính với mỗi camera cứ 12s sẽ chụp ra một ảnh
 ![anh_minh_hoa](https://user-images.githubusercontent.com/80096230/120655439-e1676200-c4ac-11eb-905b-67d5562120e4.png)
-
+(Nguồn: http://giaothong.hochiminhcity.gov.vn/map.aspx)
 
 ## 3.Mô tả về đặc trưng
 Sử dụng thuật toán yolov4
